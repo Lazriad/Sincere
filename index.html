@@ -5,34 +5,66 @@
   <title>Sincere</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
+  <nav>
     <h1>Sincere</h1>
-    <p>Dating built on accountability and depth.</p>
-  </header>
+    <button onclick="scrollToWaitlist()">Join Waitlist</button>
+  </nav>
 
   <section class="hero">
-    <h2>Connection Over Convenience</h2>
-    <p>No ghosting. No low-effort swiping. Just real people.</p>
-    <button>Join Waitlist</button>
+    <h2>Dating, Rebuilt With Integrity.</h2>
+    <p>
+      No ghosting. No shallow swiping. No wasted time.  
+      Sincere enforces accountability, depth, and intentional connection.
+    </p>
+    <button onclick="scrollToWaitlist()">Request Early Access</button>
   </section>
 
-  <section class="features">
-    <h2>Core Principles</h2>
-    <ul>
-      <li>1000-word minimum bio</li>
-      <li>Bio-first matching</li>
-      <li>Accountability scoring</li>
-      <li>Event-based dating</li>
-      <li>Subscription for serious users</li>
-    </ul>
+  <section class="principles">
+    <h3>Why Sincere?</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>1000-Word Bios</h4>
+        <p>Depth first. Photos unlock after reading.</p>
+      </div>
+      <div class="card">
+        <h4>Accountability Score</h4>
+        <p>Ghosting and low effort reduce visibility.</p>
+      </div>
+      <div class="card">
+        <h4>Event-Based Dating</h4>
+        <p>Meet in curated group settings, not endless texting.</p>
+      </div>
+      <div class="card">
+        <h4>Intentional Community</h4>
+        <p>Friction filters out unserious users.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="waitlist" id="waitlist">
+    <h3>Join the Founding Members</h3>
+    <p>Be among the first to experience dating without games.</p>
+
+    <form id="waitlist-form">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <button type="submit">Join Waitlist</button>
+    </form>
+
+    <p id="success-message" class="hidden">
+      You're on the list. We'll be in touch.
+    </p>
   </section>
 
   <footer>
-    <p>© 2026 Sincere</p>
+    <p>© 2026 Sincere. Built for real connection.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
+
+
